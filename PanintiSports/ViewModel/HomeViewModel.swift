@@ -12,20 +12,17 @@ class HomeViewModel: ObservableObject {
     var constant = Constants()
     
     func fetchAllLeagues() {
-        var url = URL(string: constant.baseURL + "all_leagues.php")
+        let url = URL(string: constant.baseURL + "all_leagues.php")
         let task = URLSession.shared.dataTask(with: url!) { [weak self]
             data, _, error in
             guard let data = data, error == nil else {
                 return
             }
             do {
-                print("data", data)
                 let meta = try JSONDecoder().decode(Leagues.self, from: data)
-                print("meta", meta)
                 DispatchQueue.main.async {
-                    self?.leagues = meta.leagues
+                    self?.leagues = meta.leagues.sorted()
                 }
-                print("meta", meta)
             } catch {
                 print(error)
             }

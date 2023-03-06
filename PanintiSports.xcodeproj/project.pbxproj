@@ -19,6 +19,7 @@
 		100047B929B5E859007C161B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047B829B5E859007C161B /* ViewExtension.swift */; };
 		100047BB29B5E8EF007C161B /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047BA29B5E8EF007C161B /* FavoriteView.swift */; };
 		101786CD29B5EDF700002012 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786CC29B5EDF700002012 /* Constants.swift */; };
+		101786CF29B5F91100002012 /* TeamListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786CE29B5F91100002012 /* TeamListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,7 @@
 		100047B829B5E859007C161B /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
 		100047BA29B5E8EF007C161B /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
 		101786CC29B5EDF700002012 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		101786CE29B5F91100002012 /* TeamListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				100047B529B5E3F7007C161B /* HomeViewModel.swift */,
+				101786CE29B5F91100002012 /* TeamListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -202,6 +205,7 @@
 				100047AE29B5D81D007C161B /* League.swift in Sources */,
 				100047B929B5E859007C161B /* ViewExtension.swift in Sources */,
 				100047BB29B5E8EF007C161B /* FavoriteView.swift in Sources */,
+				101786CF29B5F91100002012 /* TeamListViewModel.swift in Sources */,
 				1000479A29B5D596007C161B /* PanintiSportsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

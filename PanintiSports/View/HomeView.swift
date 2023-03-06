@@ -10,28 +10,33 @@ import SwiftUI
 struct HomeView: View {
     @StateObject var homeVM = HomeViewModel()
     var body: some View {
-        if homeVM.leagues.isEmpty{
+        if homeVM.leagues.isEmpty {
             ProgressView().onAppear {
                 homeVM.fetchAllLeagues()
             }
-        }else{
-            ScrollView {
-                LazyVStack(alignment: .leading) {
-                    ForEach(homeVM.leagues, id: \.self) { league in
-                        NavigationLink(destination: {
-                            Text(league.strLeague ?? "-")
-                        }, label: {
-                            HStack{
-                                Text(league.strLeague ?? "-").foregroundColor(.primary)
-                                Spacer()
-                                Image(systemName: "chevron.right")
-                            }
-                        })
-                        Divider()
-                    }
-                }.padding()
+        } else {
+            List(homeVM.leagues, id: \.self) { league in
+                LeagueRow(league: league)
             }
         }
+    }
+}
+
+struct LeagueRow: View {
+    let league: League
+    var body: some View {
+        NavigationLink(destination: {
+            Text(league.strLeague ?? "-")
+        }, label: {
+            HStack {
+                Image(systemName: SportIcon(strSport: league.strSport ?? "-").symbolName)
+                    .foregroundColor(.primary)
+                Text(league.strLeague ?? "-")
+                    .foregroundColor(.primary)
+                    .lineLimit(1)
+                    .truncationMode(.tail)
+            }
+        })
     }
 }
 
