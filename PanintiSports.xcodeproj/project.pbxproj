@@ -11,6 +11,14 @@
 		1000479C29B5D596007C161B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1000479B29B5D596007C161B /* ContentView.swift */; };
 		1000479E29B5D596007C161B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1000479D29B5D596007C161B /* Assets.xcassets */; };
 		100047A129B5D596007C161B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 100047A029B5D596007C161B /* Preview Assets.xcassets */; };
+		100047A929B5D5C2007C161B /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047A829B5D5C2007C161B /* HomeView.swift */; };
+		100047AE29B5D81D007C161B /* League.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047AD29B5D81D007C161B /* League.swift */; };
+		100047B129B5DBE3007C161B /* PanintiSports.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 100047AF29B5DBE3007C161B /* PanintiSports.xcdatamodeld */; };
+		100047B329B5DC61007C161B /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047B229B5DC61007C161B /* Team.swift */; };
+		100047B629B5E3F7007C161B /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047B529B5E3F7007C161B /* HomeViewModel.swift */; };
+		100047B929B5E859007C161B /* ViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047B829B5E859007C161B /* ViewExtension.swift */; };
+		100047BB29B5E8EF007C161B /* FavoriteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 100047BA29B5E8EF007C161B /* FavoriteView.swift */; };
+		101786CD29B5EDF700002012 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786CC29B5EDF700002012 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +27,14 @@
 		1000479B29B5D596007C161B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1000479D29B5D596007C161B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		100047A029B5D596007C161B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		100047A829B5D5C2007C161B /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		100047AD29B5D81D007C161B /* League.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = League.swift; sourceTree = "<group>"; };
+		100047B029B5DBE3007C161B /* PanintiSports.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PanintiSports.xcdatamodel; sourceTree = "<group>"; };
+		100047B229B5DC61007C161B /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		100047B529B5E3F7007C161B /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		100047B829B5E859007C161B /* ViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExtension.swift; sourceTree = "<group>"; };
+		100047BA29B5E8EF007C161B /* FavoriteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteView.swift; sourceTree = "<group>"; };
+		101786CC29B5EDF700002012 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +67,16 @@
 		1000479829B5D596007C161B /* PanintiSports */ = {
 			isa = PBXGroup;
 			children = (
+				100047B729B5E84D007C161B /* Extension */,
+				100047B429B5E3E5007C161B /* ViewModel */,
+				100047AC29B5D811007C161B /* Model */,
+				100047A729B5D5B8007C161B /* View */,
 				1000479929B5D596007C161B /* PanintiSportsApp.swift */,
 				1000479B29B5D596007C161B /* ContentView.swift */,
 				1000479D29B5D596007C161B /* Assets.xcassets */,
 				1000479F29B5D596007C161B /* Preview Content */,
+				100047AF29B5DBE3007C161B /* PanintiSports.xcdatamodeld */,
+				101786CC29B5EDF700002012 /* Constants.swift */,
 			);
 			path = PanintiSports;
 			sourceTree = "<group>";
@@ -65,6 +87,40 @@
 				100047A029B5D596007C161B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		100047A729B5D5B8007C161B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				100047A829B5D5C2007C161B /* HomeView.swift */,
+				100047BA29B5E8EF007C161B /* FavoriteView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		100047AC29B5D811007C161B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				100047AD29B5D81D007C161B /* League.swift */,
+				100047B229B5DC61007C161B /* Team.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		100047B429B5E3E5007C161B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				100047B529B5E3F7007C161B /* HomeViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		100047B729B5E84D007C161B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				100047B829B5E859007C161B /* ViewExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +193,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				100047B329B5DC61007C161B /* Team.swift in Sources */,
+				100047A929B5D5C2007C161B /* HomeView.swift in Sources */,
+				100047B629B5E3F7007C161B /* HomeViewModel.swift in Sources */,
+				100047B129B5DBE3007C161B /* PanintiSports.xcdatamodeld in Sources */,
 				1000479C29B5D596007C161B /* ContentView.swift in Sources */,
+				101786CD29B5EDF700002012 /* Constants.swift in Sources */,
+				100047AE29B5D81D007C161B /* League.swift in Sources */,
+				100047B929B5E859007C161B /* ViewExtension.swift in Sources */,
+				100047BB29B5E8EF007C161B /* FavoriteView.swift in Sources */,
 				1000479A29B5D596007C161B /* PanintiSportsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -195,7 +259,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -249,7 +313,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -273,6 +337,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -282,9 +347,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shrall.PanintiSports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -302,6 +370,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -311,9 +380,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.shrall.PanintiSports;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -339,6 +411,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		100047AF29B5DBE3007C161B /* PanintiSports.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				100047B029B5DBE3007C161B /* PanintiSports.xcdatamodel */,
+			);
+			currentVersion = 100047B029B5DBE3007C161B /* PanintiSports.xcdatamodel */;
+			path = PanintiSports.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 1000478E29B5D596007C161B /* Project object */;
 }
