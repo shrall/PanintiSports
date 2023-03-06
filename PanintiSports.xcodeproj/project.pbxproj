@@ -22,6 +22,8 @@
 		101786CF29B5F91100002012 /* LeagueDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786CE29B5F91100002012 /* LeagueDetailViewModel.swift */; };
 		101786D129B6328200002012 /* LeagueDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786D029B6328200002012 /* LeagueDetailView.swift */; };
 		101786D329B6381300002012 /* TeamDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786D229B6381300002012 /* TeamDetailView.swift */; };
+		101786D529B64BD200002012 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786D429B64BD200002012 /* Persistence.swift */; };
+		101786D729B64EB300002012 /* FavoriteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101786D629B64EB300002012 /* FavoriteViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		101786CE29B5F91100002012 /* LeagueDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailViewModel.swift; sourceTree = "<group>"; };
 		101786D029B6328200002012 /* LeagueDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LeagueDetailView.swift; sourceTree = "<group>"; };
 		101786D229B6381300002012 /* TeamDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamDetailView.swift; sourceTree = "<group>"; };
+		101786D429B64BD200002012 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		101786D629B64EB300002012 /* FavoriteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 				1000479F29B5D596007C161B /* Preview Content */,
 				100047AF29B5DBE3007C161B /* PanintiSports.xcdatamodeld */,
 				101786CC29B5EDF700002012 /* Constants.swift */,
+				101786D429B64BD200002012 /* Persistence.swift */,
 			);
 			path = PanintiSports;
 			sourceTree = "<group>";
@@ -120,6 +125,7 @@
 			children = (
 				100047B529B5E3F7007C161B /* HomeViewModel.swift */,
 				101786CE29B5F91100002012 /* LeagueDetailViewModel.swift */,
+				101786D629B64EB300002012 /* FavoriteViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -205,6 +211,8 @@
 				100047B329B5DC61007C161B /* Team.swift in Sources */,
 				100047A929B5D5C2007C161B /* HomeView.swift in Sources */,
 				100047B629B5E3F7007C161B /* HomeViewModel.swift in Sources */,
+				101786D729B64EB300002012 /* FavoriteViewModel.swift in Sources */,
+				101786D529B64BD200002012 /* Persistence.swift in Sources */,
 				100047B129B5DBE3007C161B /* PanintiSports.xcdatamodeld in Sources */,
 				1000479C29B5D596007C161B /* ContentView.swift in Sources */,
 				101786CD29B5EDF700002012 /* Constants.swift in Sources */,

@@ -5,6 +5,7 @@
 //  Created by Marshall Kurniawan on 06/03/23.
 //
 
+import CoreData
 import Foundation
 
 class LeagueDetailViewModel: ObservableObject {
@@ -12,7 +13,7 @@ class LeagueDetailViewModel: ObservableObject {
     var constant = Constants()
     
     @Published var teams = [Team]()
-    @Published var teamDetail: Team = Team(idTeam: "", strTeam: "", intFormedYear: "", strSport: "", strLeague: "", strStadium: "", strStadiumLocation: "", strWebsite: "", strTeamBadge: "", strDescriptionEN: "")
+    @Published var teamDetail: Team = .init(idTeam: "", strTeam: "", strLeague: "", strTeamBadge: "", strDescriptionEN: "")
     @Published var seeDetailView = false
     @Published var listTypeGrid = false
 

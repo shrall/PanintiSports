@@ -55,7 +55,7 @@ struct LeagueDetailView: View {
             leagueDetailVM.fetchAllTeams()
         }
         .sheet(isPresented: $leagueDetailVM.seeDetailView) {
-            TeamDetailView(leagueDetailVM: leagueDetailVM)
+            TeamDetailView(seeDetailView: $leagueDetailVM.seeDetailView, team: leagueDetailVM.teamDetail)
         }.toolbar {
             ToolbarItem(placement: .navigationBarTrailing) {
                 Button {

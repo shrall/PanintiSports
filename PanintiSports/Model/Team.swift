@@ -14,12 +14,7 @@ struct Teams: Codable {
 struct Team: Hashable, Codable {
     let idTeam: String?
     let strTeam: String?
-    let intFormedYear: String?
-    let strSport: String?
     let strLeague: String?
-    let strStadium: String?
-    let strStadiumLocation: String?
-    let strWebsite: String?
     let strTeamBadge: String?
     let strDescriptionEN: String?
 }
