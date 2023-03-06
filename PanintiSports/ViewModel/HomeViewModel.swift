@@ -8,9 +8,10 @@
 import Foundation
 
 class HomeViewModel: ObservableObject {
-    @Published var leagues = [League]()
     var constant = Constants()
     
+    @Published var leagues = [League]()
+
     func fetchAllLeagues() {
         let url = URL(string: constant.baseURL + "all_leagues.php")
         let task = URLSession.shared.dataTask(with: url!) { [weak self]

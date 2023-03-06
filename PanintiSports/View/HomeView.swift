@@ -26,7 +26,7 @@ struct LeagueRow: View {
     let league: League
     var body: some View {
         NavigationLink(destination: {
-            Text(league.strLeague ?? "-")
+            LeagueDetailView(leagueName: league.strLeague ?? "-").navigationTitle(league.strLeague ?? "-")
         }, label: {
             HStack {
                 Image(systemName: SportIcon(strSport: league.strSport ?? "-").symbolName)
