@@ -9,6 +9,12 @@ import Foundation
 import SwiftUI
 
 extension View {
+    func expandable () -> some View {
+        ZStack {
+            Color.clear
+            self
+        }
+    }
     func cornerRadius(_ radius: CGFloat, corners: UIRectCorner) -> some View {
         clipShape( RoundedCorner(radius: radius, corners: corners) )
     }

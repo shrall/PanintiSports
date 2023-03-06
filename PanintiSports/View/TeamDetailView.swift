@@ -43,6 +43,13 @@ struct TeamDetailView: View {
                         Text("Close")
                     }
                 }
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    Button {
+                        print("fav")
+                    } label: {
+                        Image(systemName: "star")
+                    }
+                }
             }
         }
     }
